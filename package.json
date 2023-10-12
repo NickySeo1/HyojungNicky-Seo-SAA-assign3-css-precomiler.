@@ -1,0 +1,19 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "nikki": "sass --watch src/scss:public/assets/css",
+    "start":"concurrently \"npm run nikki\" \"npm run goservergo\""
+  },
+  "author": "Nicky",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.69.2"
+  }
+}
